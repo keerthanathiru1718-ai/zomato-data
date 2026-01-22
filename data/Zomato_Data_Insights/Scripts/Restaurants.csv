@@ -1,0 +1,11 @@
+restaurant_id,name,cuisine_type,location,owner_name,average_delivery_time,contact_number,rating,total_orders,is_active
+1b2dfd17-8b2d-4b26-b5ad-557d212f8e6d,Gonzalez PLC,Chinese,Gonzalezborough,Terri Torres,29,671.351.8724x0515,5.0,43,True
+14644083-d54e-41e0-be76-7d5648772f60,Obrien-Schneider,Chinese,Port Juliemouth,Suzanne Barrett,55,(436)790-7594x272,3.0,36,False
+dfc06f4c-b4f2-4981-ac9f-9b580b432477,"Knight, Robinson and Walker",Mexican,Lake Lisaville,Cindy Richards,11,(407)408-4886x694,4.0,28,False
+b18dcf6f-12d4-4735-ac36-0704674e33e6,"Fields, Clark and Jackson",Mexican,Blackview,Jerry Lee,55,+1-861-746-4379x7711,1.0,1,True
+f1c7574e-f649-4537-a058-994f85cb25c6,"Bradley, Johns and Moyer",Indian,Lake Mary,Edward Taylor,27,368-520-8477x8439,2.0,17,False
+2418d65a-9387-4044-95ad-2f6889054957,"Johnson, Wright and Hale",Chinese,Alexisstad,William Roach,10,479.669.3854,5.0,4,True
+60f958a8-dd52-43bd-87c2-db088e6764be,"Gomez, Conway and King",Indian,Wendyburgh,Jacob Kennedy,10,985.806.9876x85625,1.0,6,True
+cb7d4927-b063-4f7f-9711-5429f35352ea,Hart and Sons,Italian,Danielmouth,Alexander Rodgers,52,888-467-2051x63233,5.0,32,False
+43c383b9-00c0-4dc3-8d55-3187203a5b11,Lopez-Knight,Indian,Alexanderberg,Paula Woods,16,976.817.4033x85494,1.0,41,True
+3b78e510-4bec-4a0d-ad69-5afbce2ae47a,Robinson-Schneider,Arabian,Rickyhaven,Tristan Shaffer,31,(916)707-7308x281,3.0,22,True

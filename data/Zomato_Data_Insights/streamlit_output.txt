@@ -1,0 +1,786 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.11:8501
+
+2026-01-16 21:29:40.189 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:29:50.375 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+    ~~~~~~~~~~~~~~~~~~^
+        query,
+        ^^^^^^
+    ...<3 lines>...
+        query_attrs=self.query_attrs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+_mysql_connector.MySQLInterfaceError: Unknown database 'new_tab'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 310, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py", line 46, in <module>
+    cursor.execute(sql_queries[0])
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._stmt_partition["mappable_stmt"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        raw_as_string=self._raw_as_string,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+        err.errno, msg=err.msg, sqlstate=err.sqlstate
+    ) from err
+mysql.connector.errors.ProgrammingError: 1049 (42000): Unknown database 'new_tab'
+2026-01-16 21:29:54.646 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+    ~~~~~~~~~~~~~~~~~~^
+        query,
+        ^^^^^^
+    ...<3 lines>...
+        query_attrs=self.query_attrs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+_mysql_connector.MySQLInterfaceError: Unknown database 'new_tab'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 310, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py", line 51, in <module>
+    cursor.execute(sql_queries[1])
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._stmt_partition["mappable_stmt"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        raw_as_string=self._raw_as_string,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+        err.errno, msg=err.msg, sqlstate=err.sqlstate
+    ) from err
+mysql.connector.errors.ProgrammingError: 1049 (42000): Unknown database 'new_tab'
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+2026-01-16 21:29:59.691 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:30:16.089 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:30:18.216 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+    ~~~~~~~~~~~~~~~~~~^
+        query,
+        ^^^^^^
+    ...<3 lines>...
+        query_attrs=self.query_attrs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+_mysql_connector.MySQLInterfaceError: Unknown database 'new_tab'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 310, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py", line 46, in <module>
+    cursor.execute(sql_queries[0])
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._stmt_partition["mappable_stmt"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        raw_as_string=self._raw_as_string,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+        err.errno, msg=err.msg, sqlstate=err.sqlstate
+    ) from err
+mysql.connector.errors.ProgrammingError: 1049 (42000): Unknown database 'new_tab'
+2026-01-16 21:30:21.146 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+    ~~~~~~~~~~~~~~~~~~^
+        query,
+        ^^^^^^
+    ...<3 lines>...
+        query_attrs=self.query_attrs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+_mysql_connector.MySQLInterfaceError: Unknown database 'new_tab'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 310, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py", line 51, in <module>
+    cursor.execute(sql_queries[1])
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._stmt_partition["mappable_stmt"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        raw_as_string=self._raw_as_string,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+        err.errno, msg=err.msg, sqlstate=err.sqlstate
+    ) from err
+mysql.connector.errors.ProgrammingError: 1049 (42000): Unknown database 'new_tab'
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+2026-01-16 21:30:26.631 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+    ~~~~~~~~~~~~~~~~~~^
+        query,
+        ^^^^^^
+    ...<3 lines>...
+        query_attrs=self.query_attrs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+_mysql_connector.MySQLInterfaceError: Unknown database 'new_tab'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 310, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py", line 46, in <module>
+    cursor.execute(sql_queries[0])
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._stmt_partition["mappable_stmt"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        raw_as_string=self._raw_as_string,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+        err.errno, msg=err.msg, sqlstate=err.sqlstate
+    ) from err
+mysql.connector.errors.ProgrammingError: 1049 (42000): Unknown database 'new_tab'
+2026-01-16 21:30:28.825 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:30:29.042 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:30:35.849 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
+    self._cmysql.query(
+    ~~~~~~~~~~~~~~~~~~^
+        query,
+        ^^^^^^
+    ...<3 lines>...
+        query_attrs=self.query_attrs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+_mysql_connector.MySQLInterfaceError: Unknown database 'new_tab'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 310, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py", line 46, in <module>
+    cursor.execute(sql_queries[0])
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
+    self._connection.cmd_query(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._stmt_partition["mappable_stmt"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        raw_as_string=self._raw_as_string,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\mysql\connector\connection_cext.py", line 781, in cmd_query
+    raise get_mysql_exception(
+        err.errno, msg=err.msg, sqlstate=err.sqlstate
+    ) from err
+mysql.connector.errors.ProgrammingError: 1049 (42000): Unknown database 'new_tab'
+2026-01-16 21:31:47.701 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:53: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[1], connection)
+2026-01-16 21:32:03.566 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:32:37.416 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:58: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[2], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+2026-01-16 21:34:07.710 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:35:57.681 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+2026-01-16 21:36:10.068 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:39:05.495 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+2026-01-16 21:43:04.230 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+2026-01-16 21:43:31.517 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:43:32.873 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+2026-01-16 21:43:42.041 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 669, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\navigation\page.py", line 306, in run
+    code = ctx.pages_manager.get_page_script_byte_code(str(self._page))
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\pages_manager.py", line 160, in get_page_script_byte_code
+    return self._script_cache.get_bytecode(script_path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "C:\Users\Thiru\AppData\Local\Programs\Python\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\CRUD.py", line 1
+    pip install streamlit pandas
+        ^^^^^^^
+SyntaxError: invalid syntax
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Table.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql(query, connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)
+C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\Pages\Query.py:48: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(sql_queries[0], connection)

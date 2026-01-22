@@ -1,0 +1,11 @@
+customer_id,name,email,phone_number,location,signup_date,is_premium,preferred_cuisine,total_orders,average_rating
+28b780ed-65a0-4943-a9a0-8b1f11e81845,Daniel Matthews DVM,cesarthomas@example.net,436.373.0951x019,West Gary,2022-08-15,True,Mexican,2,4.0
+9daa0f86-09cd-4831-8fd6-f07c0e8ce74a,Terri Fernandez,gregoryrobert@example.com,+1-945-351-4662x882,Port Nicoleside,2022-10-08,False,Chinese,1,2.0
+0d99a823-e117-4d63-97fe-bd530d306a1b,Adrienne Wright,victoriarollins@example.com,523.430.0194,Branditown,2020-09-16,False,Indian,9,5.0
+44e8ba21-9aa0-4ada-8718-685772ef9575,Dr. Amy Arias MD,stevenrodriguez@example.net,(424)947-9584x319,Carlosborough,2021-02-01,False,Indian,6,4.0
+9bf403d5-7af9-4336-b915-a4c12e22d344,Dr. Rebecca Gillespie,jeanettetrujillo@example.com,001-799-304-0165x90994,Kayleemouth,2021-04-27,True,Mexican,2,3.0
+b7067ab7-524f-4c79-a433-89458593ecf1,Jose Thomas,shelbyalexander@example.com,(788)690-3585,Jameschester,2025-02-03,True,Indian,1,1.0
+fb51edf7-0cf3-4f30-83bf-eb28933c2266,Christopher Brown,xfox@example.org,(845)230-7720x509,Elizabethbury,2025-11-19,False,Italian,6,5.0
+402aec63-ded2-4426-affb-3d366db8b564,Lauren Collins,zpearson@example.com,420-697-9907x02043,West Andrew,2021-02-20,False,Italian,7,4.0
+b3479500-837c-4397-8c32-e994f2bfb66b,Anthony Beltran,lowerybradley@example.com,972.492.4261,Port Sonia,2024-12-25,False,Indian,10,3.0
+37f9b3bb-1beb-4b77-a3b3-31128a07f94e,Charlene Hernandez,imorales@example.com,+1-696-607-8256x95667,North Sean,2021-12-28,True,Chinese,5,5.0

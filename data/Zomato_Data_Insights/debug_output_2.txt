@@ -1,0 +1,18 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 84F7-9697
+
+ Directory of c:\Users\Thiru\Desktop\data\Zomato_Data_Insights
+
+16-01-2026  21:28    <DIR>          .
+16-01-2026  19:35    <DIR>          ..
+16-01-2026  17:50             3,527 class_CRUD.py
+16-01-2026  17:50             3,236 class_DatabaseManager.py
+16-01-2026  17:50    <DIR>          Datasets
+16-01-2026  21:28                 0 debug_output_2.txt
+16-01-2026  17:50             1,042 main.py
+16-01-2026  17:50    <DIR>          Pages
+16-01-2026  17:50             5,895 README.md
+16-01-2026  21:25                60 requirements.txt
+16-01-2026  17:52    <DIR>          Scripts
+               6 File(s)         13,760 bytes
+               5 Dir(s)  29,897,748,480 bytes free
