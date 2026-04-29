@@ -3,3 +3,8 @@ pandas
 mysql-connector-python
 faker
 openpyxl
+matplotlib
+seaborn
+plotly
+numpy
+scipy

@@ -1,17 +1,13 @@
 import mysql.connector as db
 import pandas as pd
 import time
+from config import DB_CONFIG
 
 class DatabaseManager:
-    def __init__(self, user, password, database, host="localhost", retries=3):
+    def __init__(self, retries=3):
         for attempt in range(retries):
             try:
-                self.connection = db.connect(
-                    user=user,
-                    password=password,
-                    host=host,
-                    database=database
-                )
+                self.connection = db.connect(**DB_CONFIG)
                 self.cursor = self.connection.cursor()
                 print("Database connection established successfully.")
                 break

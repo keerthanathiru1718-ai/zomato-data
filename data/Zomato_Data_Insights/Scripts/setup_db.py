@@ -1,17 +1,20 @@
 import mysql.connector as db
 import pandas as pd
 import os
+import sys
+
+# Add parent directory to path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from config import DB_CONFIG
 
 def setup():
     connection = None
     try:
         # Connect to server
         print("Connecting to MySQL...")
-        connection = db.connect(
-            user='root',
-            password='123456',
-            host='127.0.0.1'
-        )
+        server_config = DB_CONFIG.copy()
+        del server_config['database']
+        connection = db.connect(**server_config)
         cursor = connection.cursor()
         
         # Create DB

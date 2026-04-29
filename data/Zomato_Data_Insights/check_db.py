@@ -1,6 +1,8 @@
 import mysql.connector
+from config import DB_CONFIG
+
 try:
-    conn = mysql.connector.connect(user='root', password='123456', host='localhost', database='zomato_db')
+    conn = mysql.connector.connect(**DB_CONFIG)
     cursor = conn.cursor()
     cursor.execute("SHOW TABLES")
     tables = cursor.fetchall()

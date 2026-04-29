@@ -11,12 +11,7 @@ from class_CRUD import CRUDOperations
 
 
 try:
-    db_manager = DatabaseManager(
-         user = 'root',
-        password = '123456',
-        host = 'localhost',
-        database = 'zomato_db'
-    )
+    db_manager = DatabaseManager()
     st.success("Database connection established successfully.")
 except Exception as e:
     st.error(f"Failed to connect to the database: {e}")
@@ -69,16 +64,12 @@ elif operation == "Read":
 elif operation == "Update":
     st.subheader("Update Records")
     try:
-        cursor = db_manager.connection.cursor()
-        cursor.execute("SHOW TABLES")
-        tables = [table[0] for table in cursor.fetchall()]
+        tables = db_manager.fetch_tables()
         table_name = st.selectbox("Select Table", tables)
         
         if table_name:
-            cursor.execute(f"DESCRIBE {table_name}")
-            columns = [column[0] for column in cursor.fetchall()]
-            cursor.execute(f"SELECT * FROM {table_name}")
-            current_data = cursor.fetchall()
+            columns = db_manager.fetch_columns(table_name)
+            current_data = db_manager.fetch_data(f"SELECT * FROM {table_name}")
             st.write("Current Data:")
             df = pd.DataFrame(current_data, columns=columns)
             st.dataframe(df)

@@ -1,63 +1,31 @@
 import streamlit as st
 import pandas as pd
-import mysql.connector as db
-from mysql.connector import Error
+import sys
+import os
 
-def create_connection():
-    try:
-        connection = db.connect(
-        user = 'root',
-        password = '123456',
-        host = 'localhost',
-        database = 'zomato_db')
-        return connection
-    except Error as e:
-        st.error(f"Error connecting to MySQL Database: {e}")
-        return None
-    
-def get_table_names(connection):
-    try:
-        cursor = connection.cursor()
-        cursor.execute("SHOW TABLES")
-        tables = cursor.fetchall()
-        return [table[0] for table in tables]
-    except Error as e:
-        st.error(f"Error fetching tables: {e}")
-        return []
-    finally:
-        if cursor:
-            cursor.close()
+# Add parent directory to path to import classes
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-def fetch_table_data(connection, table_name):
-    try:
-        query = f"SELECT * FROM {table_name}"
-        return pd.read_sql(query, connection)
-    except Error as e:
-        st.error(f"Error fetching data from {table_name}: {e}")
-        return None
-    
-def main():
-    st.title("Table View")
-    connection = create_connection()
-    
-    if connection is not None:
-        tables = get_table_names(connection)
-        
-        if tables:
-            selected_table = st.selectbox("Select a Table", tables)
-            if selected_table:
-                data = fetch_table_data(connection, selected_table)
-                if data is not None:
-                    st.dataframe(data)
+from class_DatabaseManager import DatabaseManager
+
+try:
+    db_manager = DatabaseManager()
+    st.success("Database connection established successfully.")
+except Exception as e:
+    st.error(f"Failed to connect to the database: {e}")
+    st.stop()
+
+st.title("Table View")
+
+tables = db_manager.fetch_tables()
+
+if tables:
+    selected_table = st.selectbox("Select a Table", tables)
+    if selected_table:
+        data = db_manager.fetch_data_as_dataframe(f"SELECT * FROM {selected_table}")
+        if not data.empty:
+            st.dataframe(data)
         else:
-            st.warning("No tables found in the database.")
-
-        connection.close()
-
-    else:
-        st.error("Unable to connect to the database.")
-
-
-
-if __name__ == "__main__":
-    main()
+            st.write("No data found in the table.")
+else:
+    st.write("No tables found in the database.")

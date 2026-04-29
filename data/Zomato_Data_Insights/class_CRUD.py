@@ -66,9 +66,10 @@ class CRUDOperations:
         try:
             if condition:
                 query = f"DELETE FROM {table_name} WHERE {condition}"
+                self.db_manager.execute_query(query, params)
             else:
                 query = f"DELETE FROM {table_name}"
-            self.db_manager.execute_query(query)
+                self.db_manager.execute_query(query)
             print(f"Records deleted successfully from table '{table_name}'.")
         except Exception as e:
             print(f"Error during DELETE operation: {e}")
@@ -78,6 +79,6 @@ class CRUDOperations:
         try:
             query = f"DROP TABLE {table_name}"
             self.db_manager.execute_query(query)
-            print(f"Table {table_name} as been Dropped Sucessfully!")
+            print(f"Table {table_name} has been Dropped Successfully!")
         except Exception as e:
             print(f"Error during DROP operation: {e}")

@@ -2,7 +2,7 @@
 import streamlit as st
 
 st.write("Welcome to Food Delivery Management System!")
-st.image(r"C:\Users\Thiru\Desktop\data\Zomato_Data_Insights\images\food_delivery.gif")
+st.image(r"images\food_delivery.gif")
 st.markdown("""
     <style>
         
